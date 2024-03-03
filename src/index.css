@@ -1,0 +1,10 @@
+html,
+body {
+  font-family: 'Onest', sans-serif;
+}
+
+dialog::backdrop {
+  background-color: #202020;
+  opacity: 0.75;
+  border: none;
+}
