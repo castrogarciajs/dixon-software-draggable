@@ -35,14 +35,14 @@ export default function Res() {
           <div ref={boardFirst} className="size-96 shadow-md bg-blue-400 rounded-lg flex flex-wrap gap-1 items-center justify-center">
             {rocketsFirst.map(rocket => (
               <Box key={rocket}>
-                <Image path="/svg/rocket.svg" description={rocket} />
+                <Image path="/svg/book.svg" description={rocket} />
               </Box>
             ))}
           </div>
           <div ref={boardThree} className="size-96 shadow-md bg-blue-400 rounded-lg flex flex-wrap gap-1 items-center justify-center">
             {rocketsThree.map(rocket => (
               <Box key={rocket}>
-                <Image path="/svg/rocket.svg" description={rocket} />
+                <Image path="/svg/book.svg" description={rocket} />
               </Box>
             ))}
           </div>
@@ -51,7 +51,7 @@ export default function Res() {
           <div ref={boardSecond} className="size-96 shadow-md bg-blue-400 rounded-lg px-4 py-2 flex flex-wrap gap-1 items-center justify-center">
             {rocketsSecond.map(rocket => (
               <Box key={rocket}>
-                <Image path="/svg/rocket.svg" description={rocket} />
+                <Image path="/svg/book.svg" description={rocket} />
               </Box>
             ))}
           </div>
