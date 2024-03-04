@@ -17,17 +17,17 @@ export default function Info({ children, operation }: ResultProps) {
   }
   return (
 
-    <aside flex="~ justify-between items-center" p="x-8 y-6">
-      <div flex="~ items-center gap-3">
-        <h3 border="~ 2 blue" outline="none" className="size-16 text-2xl" rounded="full" flex="~ justify-center items-center">
+    <aside className="px-8 py-6 flex justify-between items-center">
+      <div className="flex items-center gap-3 justify-center">
+        <h3 className="size-16 text-2xl rounded-full outline-none border-2 border-blue-400 flex justify-center items-center">
           {operation.numberOne}
         </h3>
         {children}
-        <h3 border="~ 2 blue" outline="none" className="size-16 text-2xl" rounded="full" flex="~ justify-center items-center">
+        <h3 className="size-16 text-2xl rounded-full outline-none border-2 border-blue-400 flex justify-center items-center">
           {operation.numberTwo}
         </h3>
         <Equal />
-        <input type="text" border="~ 2 blue" outline="none" className="size-16 text-2xl text-center" rounded="full" disabled={won} onChange={onResultKid} />
+        <input type="text" className="size-16 text-2xl text-center outline-none rounded-full border-2 border-blue-400" disabled={won} onChange={onResultKid} />
       </div>
 
       <BadgeInfo size="44" onClick={onOpen} className="cursor-pointer" />

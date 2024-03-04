@@ -26,13 +26,13 @@ const navbar = [
 
 export default function Navbar() {
   return (
-    <header flex="~ justify-between items-center" p="x-8 y-4" shadow="md">
+    <header className="flex justify-between items-center px-8 py-4 shadow-md">
       <Link href="/">
         <img src="/logo.png" className="size-10 object-cover cursor-pointer" />
       </Link>
-      <nav flex="~ items-center gap-8 justify-center">
+      <nav className="flex items-center gap-8 justify-center">
         {navbar.map((el, i) => (
-          <Link href={el.redirect} key={i} hover="bg-blue text-white rounded transition" p="x-4 y-0.5" flex="~ justify-center items-center gap-2">
+          <Link href={el.redirect} key={i} className="hover:bg-blue-500 hover:text-white hover:rounded hover:transition px-4 py-0.5 flex justify-center items-center gap-2">
             <el.icon />
             {el.title}
           </Link>

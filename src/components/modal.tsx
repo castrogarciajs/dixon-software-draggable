@@ -6,11 +6,11 @@ export default function Modal({ concept }: OperationConceptProps) {
   const onClose = useModal(state => state.close)
 
   return (
-    <dialog position="~ fixed top-1/2" bg="blue" shadow="md" p="y-2" w="96" style={{ transform: 'translateY(-50%)' }} rounded="md" id="modal">
-      <nav p="x-2" flex="~ justify-end items-center">
-        <XCircle color="white" size="36" className="cursor-pointer" onClick={onClose} />
+    <dialog className="fixed top-1/2 bg-blue-400 shadow-md py-2 w-96 rounded-md" style={{ transform: 'translateY(-50%)' }} id="modal">
+      <nav className="flex justify-end items-center px-2">
+        <XCircle className="cursor-pointer size-36 text-white" onClick={onClose} />
       </nav>
-      <article p="x-12 b-5">
+      <article className="px-12 pb-5">
         <h2 className="text-2xl font-bold py-6">{concept.title}</h2>
         <p>{concept.description}</p>
       </article>

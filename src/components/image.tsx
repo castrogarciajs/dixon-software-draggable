@@ -5,6 +5,6 @@ interface ImageProps {
 
 export default function Image({ path, description }: ImageProps) {
   return (
-    <img src={path} alt={description} className="size-8" />
+    <img src={path} alt={description} className="size-12" />
   )
 }
